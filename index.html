@@ -3,11 +3,11 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Web3Stroll Bridge</title>
+    <title>Web3Stroll</title>
     <script async src="//busuanzi.ibruce.info/busuanzi/2.3/busuanzi.pure.mini.js"></script>
     <style>
         body { font-family: 'PingFang SC', 'Microsoft YaHei', sans-serif; max-width: 500px; margin: 20px auto; padding: 0 15px; background-color: #f4f7f9; }
-        h3 { text-align: center; color: #333; }
+        h3 { text-align: center; color: #333; letter-spacing: 2px; }
         .btn {
             display: block;
             margin-bottom: 12px;
@@ -33,7 +33,7 @@
     </style>
 </head>
 <body>
-    <h3>Web3Stroll 脚本指挥部</h3>
+    <h3>Web3Stroll 业务指挥部</h3>
     
     <a id="link-1" class="btn" href="https://app.grass.io/register?referralCode=bkOAeUghjSnpavq">1. Grass Register</a>
     <a id="link-2" class="btn" href="https://links.denet.app/mobile?referrer=0xaa2f4b344c3c00faa9b842953114acc18ebb1fc0">2. DeNet Mobile</a>
@@ -42,23 +42,25 @@
     <a id="link-5" class="btn" href="#">5. 新项目待定</a>
 
     <div class="stats-container">
-        本站累计点击：<span id="fake_pv" style="color:#007bff; font-weight:bold;">100,000+</span> 次
+        累计调度次数：<span id="fake_pv" style="color:#007bff; font-weight:bold;">102,488</span> 次
         <br>
-        当前接入节点：<span id="fake_uv" style="color:#28a745; font-weight:bold;">...</span> 
+        当前活跃节点：<span id="fake_uv" style="color:#28a745; font-weight:bold;">888</span> 
     </div>
 
     <script>
         var timer = setInterval(function() {
-            var pv = document.getElementById('busuanzi_value_site_pv');
-            var uv = document.getElementById('busuanzi_value_site_uv');
-            if (pv && pv.innerText != '--' && pv.innerText != '...') {
-                // 累计点击 = 实际点击 + 102488
-                document.getElementById('fake_pv').innerText = (parseInt(pv.innerText) + 102488).toLocaleString();
-                // 接入节点（访客数）= 实际访客 + 888
-                document.getElementById('fake_uv').innerText = (parseInt(uv.innerText) + 888).toLocaleString();
-                clearInterval(timer);
+            var pvElement = document.getElementById('busuanzi_value_site_pv');
+            var uvElement = document.getElementById('busuanzi_value_site_uv');
+            if (pvElement && pvElement.innerText != '' && pvElement.innerText != '--') {
+                var realPV = parseInt(pvElement.innerText);
+                var realUV = parseInt(uvElement.innerText);
+                if (!isNaN(realPV)) {
+                    document.getElementById('fake_pv').innerText = (realPV + 102488).toLocaleString();
+                    document.getElementById('fake_uv').innerText = (realUV + 888).toLocaleString();
+                    clearInterval(timer);
+                }
             }
-        }, 500);
+        }, 1000);
     </script>
 
     <div style="display:none">
