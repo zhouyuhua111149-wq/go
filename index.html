@@ -6,45 +6,45 @@
     <title>Web3Stroll</title>
     <script async src="//busuanzi.ibruce.info/busuanzi/2.3/busuanzi.pure.mini.js"></script>
     <style>
-        body { font-family: 'PingFang SC', 'Microsoft YaHei', sans-serif; max-width: 500px; margin: 20px auto; padding: 0 15px; background-color: #f4f7f9; }
-        h3 { text-align: center; color: #333; letter-spacing: 2px; }
+        body { font-family: 'PingFang SC', sans-serif; max-width: 550px; margin: 0 auto; padding: 20px 15px; background-color: #f0f2f5; color: #333; }
+        .category-title { margin: 25px 0 10px 5px; font-size: 16px; font-weight: bold; color: #555; border-left: 4px solid #007bff; padding-left: 10px; }
         .btn {
             display: block;
-            margin-bottom: 12px;
-            padding: 18px;
-            background-color: #007bff;
-            color: white;
+            margin-bottom: 10px;
+            padding: 16px;
+            background-color: #fff;
+            color: #007bff;
             text-decoration: none;
-            text-align: center;
-            border-radius: 12px;
-            font-weight: bold;
-            box-shadow: 0 4px 6px rgba(0,123,255,0.2);
-        }
-        .stats-container {
-            margin-top: 30px;
-            padding: 15px;
-            text-align: center;
-            font-size: 14px;
-            color: #666;
-            background: #fff;
+            text-align: left;
             border-radius: 10px;
-            border: 1px solid #eee;
+            font-weight: 500;
+            border: 1px solid #e0e4e8;
+            box-shadow: 0 2px 4px rgba(0,0,0,0.05);
         }
+        .btn:active { background-color: #f8f9fa; }
+        .stats-container { margin-top: 40px; padding: 15px; text-align: center; font-size: 13px; color: #999; }
+        .highlight { color: #007bff; font-weight: bold; }
     </style>
 </head>
 <body>
-    <h3>Web3Stroll 业务指挥部</h3>
-    
-    <a id="link-1" class="btn" href="https://app.grass.io/register?referralCode=bkOAeUghjSnpavq">1. Grass Register</a>
-    <a id="link-2" class="btn" href="https://links.denet.app/mobile?referrer=0xaa2f4b344c3c00faa9b842953114acc18ebb1fc0">2. DeNet Mobile</a>
-    <a id="link-3" class="btn" href="https://x.com/ZhouYuhua5023/status/2046852230465433770/video/1?s=46">3. X Status Video</a>
-    <a id="link-4" class="btn" href="https://x.com/zhouyuhua5023?s=21">4. X Profile</a>
-    <a id="link-5" class="btn" href="#">5. 新项目待定</a>
+    <h2 style="text-align: center; letter-spacing: 1px;">Web3Stroll 业务指挥部</h2>
+
+    <div class="category-title">01 / DePIN 基础网络</div>
+    <a id="link-grass" class="btn" href="https://app.grass.io/register?referralCode=bkOAeUghjSnpavq">● Grass Network - 宽带调度</a>
+    <a id="link-denet" class="btn" href="https://links.denet.app/mobile?referrer=0xaa2f4b344c3c00faa9b842953114acc18ebb1fc0">● DeNet Mobile - 存储节点</a>
+    <a id="link-nodepay" class="btn" href="#">● Nodepay - 待接入</a>
+
+    <div class="category-title">02 / 社交权重维护</div>
+    <a id="link-x-video" class="btn" href="https://x.com/ZhouYuhua5023/status/2046852230465433770/video/1?s=46">● X 视频推流检测</a>
+    <a id="link-x-profile" class="btn" href="https://x.com/zhouyuhua5023?s=21">● X 账户主页维护</a>
+
+    <div class="category-title">03 / 试验性项目</div>
+    <a id="link-new-1" class="btn" style="color: #bbb;" href="#">● 待部署业务 A</a>
+    <a id="link-new-2" class="btn" style="color: #bbb;" href="#">● 待部署业务 B</a>
 
     <div class="stats-container">
-        累计调度次数：<span id="fake_pv" style="color:#007bff; font-weight:bold;">102,488</span> 次
-        <br>
-        当前活跃节点：<span id="fake_uv" style="color:#28a745; font-weight:bold;">888</span> 
+        累计调度次数：<span id="fake_pv" class="highlight">102,488</span> | 
+        当前活跃节点：<span id="fake_uv" style="color:#28a745; font-weight:bold;">888</span>
     </div>
 
     <script>
@@ -67,6 +67,5 @@
         <span id="busuanzi_container_site_pv"><span id="busuanzi_value_site_pv"></span></span>
         <span id="busuanzi_container_site_uv"><span id="busuanzi_value_site_uv"></span></span>
     </div>
-
 </body>
 </html>
