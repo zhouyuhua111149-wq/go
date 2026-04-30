@@ -1,79 +1,12 @@
-<div style="text-align: center; margin: 20px 0;">
-    <video width="90%" autoplay muted loop playsinline style="border-radius: 12px; border: 2px solid #38bdf8; max-width: 500px;">
+<div id="video-container" style="text-align: center; margin: 20px 0; transition: all 0.5s ease;">
+    <video id="myVideo" width="90%" autoplay muted playsinline style="border-radius: 12px; border: 2px solid #38bdf8; max-width: 500px;" onended="document.getElementById('video-container').style.display='none'">
         <source src="video.mp4" type="video/mp4">
+        您的浏览器不支持播放该视频。
     </video>
 </div>
-<a href="你的邀请链接" accesskey="1" class="your-button-style">Grass Network - 宽带调度</a>
-<a href="你的邀请链接" accesskey="2" class="your-button-style">DeNet Mobile - 存储节点</a>
-<a href="你的邀请链接" accesskey="3" class="your-button-style">Nodepay - 待接入</a>
-<!DOCTYPE html>
-<html lang="zh">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Web3Stroll</title>
-    <script async src="//busuanzi.ibruce.info/busuanzi/2.3/busuanzi.pure.mini.js"></script>
-    <style>
-        body { font-family: 'PingFang SC', sans-serif; max-width: 550px; margin: 0 auto; padding: 20px 15px; background-color: #f0f2f5; color: #333; }
-        .category-title { margin: 25px 0 10px 5px; font-size: 16px; font-weight: bold; color: #555; border-left: 4px solid #007bff; padding-left: 10px; }
-        .btn {
-            display: block;
-            margin-bottom: 10px;
-            padding: 16px;
-            background-color: #fff;
-            color: #007bff;
-            text-decoration: none;
-            text-align: left;
-            border-radius: 10px;
-            font-weight: 500;
-            border: 1px solid #e0e4e8;
-            box-shadow: 0 2px 4px rgba(0,0,0,0.05);
-        }
-        .btn:active { background-color: #f8f9fa; }
-        .stats-container { margin-top: 40px; padding: 15px; text-align: center; font-size: 13px; color: #999; }
-        .highlight { color: #007bff; font-weight: bold; }
-    </style>
-</head>
-<body>
-    <h2 style="text-align: center; letter-spacing: 1px;">Web3Stroll 业务指挥部</h2>
 
-    <div class="category-title">01 / DePIN 基础网络</div>
-    <a id="link-grass" class="btn" href="https://app.grass.io/register?referralCode=bkOAeUghjSnpavq">● Grass Network - 宽带调度</a>
-    <a id="link-denet" class="btn" href="https://links.denet.app/mobile?referrer=0xaa2f4b344c3c00faa9b842953114acc18ebb1fc0">● DeNet Mobile - 存储节点</a>
-    <a id="link-nodepay" class="btn" href="#">● Nodepay - 待接入</a>
-
-    <div class="category-title">02 / 社交权重维护</div>
-    <a id="link-x-video" class="btn" href="https://x.com/ZhouYuhua5023/status/2046852230465433770/video/1?s=46">● X 视频推流检测</a>
-    <a id="link-x-profile" class="btn" href="https://x.com/zhouyuhua5023?s=21">● X 账户主页维护</a>
-
-    <div class="category-title">03 / 试验性项目</div>
-    <a id="link-new-1" class="btn" style="color: #bbb;" href="#">● 待部署业务 A</a>
-    <a id="link-new-2" class="btn" style="color: #bbb;" href="#">● 待部署业务 B</a>
-
-    <div class="stats-container">
-        累计调度次数：<span id="fake_pv" class="highlight">102,488</span> | 
-        当前活跃节点：<span id="fake_uv" style="color:#28a745; font-weight:bold;">888</span>
-    </div>
-
-    <script>
-        var timer = setInterval(function() {
-            var pvElement = document.getElementById('busuanzi_value_site_pv');
-            var uvElement = document.getElementById('busuanzi_value_site_uv');
-            if (pvElement && pvElement.innerText != '' && pvElement.innerText != '--') {
-                var realPV = parseInt(pvElement.innerText);
-                var realUV = parseInt(uvElement.innerText);
-                if (!isNaN(realPV)) {
-                    document.getElementById('fake_pv').innerText = (realPV + 102488).toLocaleString();
-                    document.getElementById('fake_uv').innerText = (realUV + 888).toLocaleString();
-                    clearInterval(timer);
-                }
-            }
-        }, 1000);
-    </script>
-
-    <div style="display:none">
-        <span id="busuanzi_container_site_pv"><span id="busuanzi_value_site_pv"></span></span>
-        <span id="busuanzi_container_site_uv"><span id="busuanzi_value_site_uv"></span></span>
-    </div>
-</body>
-</html>
+<div style="text-align: center; margin-top: 20px;">
+    <a href="https://app.getgrass.io/register/?referralCode=你的代码" accesskey="1" style="display:block; padding:10px; margin:5px auto; max-width:300px; background:#f1f5f9; text-decoration:none; color:#334155; border-radius:8px; border:1px solid #e2e8f0; font-weight:bold;">Grass Network - 宽带调度</a>
+    <a href="https://denet.me/你的代码" accesskey="2" style="display:block; padding:10px; margin:5px auto; max-width:300px; background:#f1f5f9; text-decoration:none; color:#334155; border-radius:8px; border:1px solid #e2e8f0; font-weight:bold;">DeNet Mobile - 存储节点</a>
+    <a href="https://app.nodepay.ai/register?ref=你的代码" accesskey="3" style="display:block; padding:10px; margin:5px auto; max-width:300px; background:#f1f5f9; text-decoration:none; color:#334155; border-radius:8px; border:1px solid #e2e8f0; font-weight:bold;">Nodepay - 待接入</a>
+</div>
