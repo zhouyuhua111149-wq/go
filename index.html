@@ -1,12 +1,27 @@
- <div id="video-container" style="text-align: center; margin: 20px 0; transition: all 0.5s ease;">
-    <video id="myVideo" width="90%" autoplay muted playsinline style="border-radius: 12px; border: 2px solid #38bdf8; max-width: 500px;" onended="document.getElementById('video-container').style.display='none'">
-        <source src="video.mp4" type="video/mp4">
-        您的浏览器不支持播放该视频。
-    </video>
-</div>
-
-<div style="text-align: center; margin-top: 20px;">
-    <a href="https://app.getgrass.io/register/?referralCode=你的代码" accesskey="1" style="display:block; padding:10px; margin:5px auto; max-width:300px; background:#f1f5f9; text-decoration:none; color:#334155; border-radius:8px; border:1px solid #e2e8f0; font-weight:bold;">Grass Network - 宽带调度</a>
-    <a href="https://denet.me/你的代码" accesskey="2" style="display:block; padding:10px; margin:5px auto; max-width:300px; background:#f1f5f9; text-decoration:none; color:#334155; border-radius:8px; border:1px solid #e2e8f0; font-weight:bold;">DeNet Mobile - 存储节点</a>
-    <a href="https://app.nodepay.ai/register?ref=你的代码" accesskey="3" style="display:block; padding:10px; margin:5px auto; max-width:300px; background:#f1f5f9; text-decoration:none; color:#334155; border-radius:8px; border:1px solid #e2e8f0; font-weight:bold;">Nodepay - 待接入</a>
-</div>
+<!DOCTYPE html>
+<html lang="zh">
+<head>
+    <meta charset="UTF-8">
+    <title>Web3Stroll 业务指挥部</title>
+    <style>
+        body { background: #0f172a; color: white; font-family: sans-serif; display: flex; justify-content: center; align-items: center; min-height: 100vh; margin: 0; }
+        .container { background: #1e293b; padding: 25px; border-radius: 15px; text-align: center; width: 90%; max-width: 500px; box-shadow: 0 10px 30px rgba(0,0,0,0.5); }
+        video { width: 100%; border-radius: 10px; border: 2px solid #38bdf8; margin-bottom: 20px; }
+        .btn { display: block; padding: 15px; margin: 10px 0; background: #38bdf8; color: #0f172a; text-decoration: none; font-weight: bold; border-radius: 8px; transition: 0.3s; }
+        .btn:hover { background: #7dd3fc; }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <h2 style="color: #38bdf8;">Web3Stroll 业务指挥部</h2>
+        <div id="video-area">
+            <video autoplay muted playsinline onended="document.getElementById('video-area').style.display='none'">
+                <source src="video.mp4" type="video/mp4">
+            </video>
+        </div>
+        <a href="https://app.getgrass.io/register/?referralCode=你的代码" accesskey="1" class="btn">01 Grass Network</a>
+        <a href="https://denet.me/你的代码" accesskey="2" class="btn">02 DeNet Mobile</a>
+        <a href="https://app.nodepay.ai/register?ref=你的代码" accesskey="3" class="btn">03 Nodepay AI</a>
+    </div>
+</body>
+</html>
