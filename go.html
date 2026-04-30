@@ -1,27 +1,39 @@
 <style>
-    /* 强对比度设计，方便脚本定位 */
-    .cpa-box {
-        width: 300px;
-        height: 60px;
-        margin: 20px auto;
-        line-height: 60px;
-        text-align: center;
-        font-weight: bold;
-        color: #fff;
-        cursor: pointer;
-        border: 3px solid #000; /* 黑边框增加找图识别度 */
+    body { 
+        background: #1a1a1a; 
+        display: flex; 
+        justify-content: center; 
+        align-items: center; 
+        height: 100vh; 
+        margin: 0; 
     }
-    .t1 { background: #FF4136; } /* 红色 */
-    .t2 { background: #2ECC40; } /* 绿色 */
-    .t3 { background: #0074D9; } /* 蓝色 */
-    .t4 { background: #FF851B; } /* 橙色 */
-    .t5 { background: #B10DC9; } /* 紫色 */
+    .mission-center {
+        width: 350px;
+        background: #333;
+        padding: 20px;
+        border: 5px solid #ffd700; /* 金色边框，极其方便找图 */
+        border-radius: 15px;
+    }
+    .cpa-btn {
+        display: block;
+        height: 50px;
+        line-height: 50px;
+        margin: 15px 0;
+        text-align: center;
+        background: #007bff;
+        color: white;
+        font-weight: bold;
+        text-decoration: none;
+        border-radius: 5px;
+        font-size: 20px;
+    }
 </style>
 
-<div class="container">
-    <div class="cpa-box t1" id="task1">CPA-LINK-01</div>
-    <div class="cpa-box t2" id="task2">CPA-LINK-02</div>
-    <div class="cpa-box t3" id="task3">CPA-LINK-03</div>
-    <div class="cpa-box t4" id="task4">CPA-LINK-04</div>
-    <div class="cpa-box t5" id="task5">CPA-LINK-05</div>
+<div class="mission-center">
+    <h2 style="color:white; text-align:center;">CPA 业务调度中心</h2>
+    <a href="你的CPA链接1" class="cpa-btn" id="t1">START MISSION 01</a>
+    <a href="你的CPA链接2" class="cpa-btn" id="t2">START MISSION 02</a>
+    <a href="你的CPA链接3" class="cpa-btn" id="t3">START MISSION 03</a>
+    <a href="你的CPA链接4" class="cpa-btn" id="t4">START MISSION 04</a>
+    <a href="你的CPA链接5" class="cpa-btn" id="t5">START MISSION 05</a>
 </div>
