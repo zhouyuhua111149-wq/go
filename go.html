@@ -1,10 +1,32 @@
-<style>
-    body { background: #1a1a1a; display: flex; justify-content: center; align-items: center; height: 100vh; margin: 0; }
-    .mission-center { width: 350px; background: #333; padding: 20px; border: 5px solid #ffd700; border-radius: 15px; }
-    .cpa-btn { display: block; height: 50px; line-height: 50px; margin: 15px 0; text-align: center; background: #007bff; color: white; font-weight: bold; text-decoration: none; border-radius: 5px; font-size: 20px; }
-</style>
+<!DOCTYPE html>
+<html lang="zh">
+<head>
+    <meta charset="UTF-8">
+    <title>Web3Stroll 业务指挥部</title>
+    <style>
+        body { background: #0f172a; color: white; font-family: sans-serif; display: flex; justify-content: center; align-items: center; min-height: 100vh; margin: 0; }
+        .container { background: #1e293b; padding: 30px; border-radius: 15px; text-align: center; width: 90%; max-width: 500px; box-shadow: 0 10px 30px rgba(0,0,0,0.5); }
+        h2 { color: #38bdf8; margin-bottom: 20px; }
+        
+        /* 按钮样式：确保它们是绝对可点击的 */
+        .btn { 
+            display: block; padding: 20px; margin: 15px 0; 
+            background: #38bdf8; color: #0f172a; 
+            text-decoration: none; font-weight: bold; 
+            border-radius: 8px; cursor: pointer;
+            position: relative; z-index: 100; /* 确保按钮浮在最上层 */
+        }
+        .btn:hover { background: #7dd3fc; }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <h2>业务指挥部</h2>
 
-<div class="mission-center">
-    <h2 style="color:white; text-align:center;">CPA 业务调度中心</h2>
-    <a href="https://playmogo.com/d/3rkka6mxwrwq" class="cpa-btn" id="t1">START MISSION 01</a>
-</div>
+        <a href="https://web3stroll.com/go-repo/" class="btn" data-id="repo">00 GO REPO</a>
+        <a href="https://playmogo.com/d/3rkka6mxwrwq" class="btn" data-id="playmogo">PlayMogo 任务</a>
+        <a href="https://app.getgrass.io/register/?referralCode=你的代码" class="btn" data-id="grass">01 Grass Network</a>
+
+    </div>
+</body>
+</html>
