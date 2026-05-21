@@ -5,16 +5,28 @@
     <title>Web3Stroll 业务指挥部</title>
     <style>
         body { background: #0f172a; color: white; font-family: sans-serif; display: flex; justify-content: center; align-items: center; min-height: 100vh; margin: 0; }
-        .container { background: #1e293b; padding: 25px; border-radius: 15px; text-align: center; width: 90%; max-width: 500px; }
-        .btn { display: block; padding: 15px; margin: 10px 0; background: #38bdf8; color: #0f172a; text-decoration: none; font-weight: bold; border-radius: 8px; }
+        .container { background: #1e293b; padding: 30px; border-radius: 15px; text-align: center; width: 90%; max-width: 500px; box-shadow: 0 10px 30px rgba(0,0,0,0.5); }
+        h2 { color: #38bdf8; margin-bottom: 20px; }
+        
+        /* 按钮样式：确保它们是绝对可点击的 */
+        .btn { 
+            display: block; padding: 20px; margin: 15px 0; 
+            background: #38bdf8; color: #0f172a; 
+            text-decoration: none; font-weight: bold; 
+            border-radius: 8px; cursor: pointer;
+            position: relative; z-index: 100; /* 确保按钮浮在最上层 */
+        }
+        .btn:hover { background: #7dd3fc; }
     </style>
 </head>
 <body>
     <div class="container">
         <h2>业务指挥部</h2>
-        <a href="#" class="btn" data-id="repo">GO REPO</a>
-        <a href="#" class="btn" data-id="playmogo">PlayMogo 任务</a>
-        <a href="#" class="btn" data-id="grass">Grass Network</a>
+
+        <a href="https://web3stroll.com/go-repo/" class="btn" data-id="repo">00 GO REPO</a>
+        <a href="https://playmogo.com/d/3rkka6mxwrwq" class="btn" data-id="playmogo">PlayMogo 任务</a>
+        <a href="https://app.getgrass.io/register/?referralCode=你的代码" class="btn" data-id="grass">01 Grass Network</a>
+
     </div>
 </body>
 </html>
